@@ -9,6 +9,9 @@ import Brightness4Icon from "@material-ui/icons/Brightness4";
 import { useEffect, useState} from "react"
 import ResumePage from "./Pages/ResumePage";
 import ContactPage from "./Pages/ContactPage";
+import Portfolio from "./Pages/Portfolio";
+import ProductPage from "./Pages/ProductPage";
+import CartPage from "./Pages/CartPage";
 
 function App() {
 
@@ -50,9 +53,12 @@ function App() {
         </div>
         <Switching>
           <Route path='/' exact><HomePage/></Route>
-          <Route path='/about' exact><AboutPage/></Route>
-          <Route path='/resume' exact><ResumePage/></Route>
-          <Route path='/contact' exact><ContactPage/></Route>
+          <Route path='/about'><AboutPage/></Route>
+          <Route path='/resume'><ResumePage/></Route>
+          <Route path='/portfolio'><Portfolio/></Route>
+          <Route path='/contact'><ContactPage/></Route>
+          <Route path='/product'><ProductPage /></Route>
+          <Route path='/cart'><CartPage/></Route>
         </Switching>
       </MainContentStyled>
     </div>

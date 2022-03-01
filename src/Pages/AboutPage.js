@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Title from '../Components/Title'
 import { InnerLayout, MainLayout } from '../styles/Layout'
+//import test from '../Video/test.mp4'
 
 const AboutPage = () => {
   return (
@@ -9,10 +10,99 @@ const AboutPage = () => {
       <MainLayout>
         <InnerLayout>
           <Title title={'About Me'} span={'About Me'}/>
+          <AboutStyled>
+          <fieldset className='info'>
+              <legend><h2>Personal Infomation</h2></legend>
+              <div>
+                <p>
+                  <b>Name</b> : Peerawit Wisitsurawong
+                  <b className='space'>Nickname</b> : Pooh
+                </p>
+                <p>
+                  <b>Gender</b> : Male
+                  <b className='space'>Age</b> : 20
+                </p>
+                <p>
+                  <b>Date of Birth</b> : 29 March 2001
+                </p>
+                <p>
+                  <b>Weight</b> : 81 kg.
+                  <b className='space'>Height</b> : 173 cm.
+                  <b className='space'>Marital Status</b> : Single
+                </p>
+                <p>
+                  <b>Nationality</b> : Thai
+                  <b className='space'>Race</b> : Thai
+                  <b className='space'>Religion</b> : Buddhism
+                </p>
+                <p className='borderP'>
+                  <h2>Address</h2>
+                </p>
+                <p>
+                  <b>No</b> : 9/161
+                  <b className='space'>Soi</b> : 21
+                  <b className='space'>Road</b> : Phahonyothin
+                </p>
+                <p>
+                  <b>Tambol/Khwang</b> : Chatuchak
+                  <b className='space'>District/Khet</b> : Chatuchak
+                </p>
+                <p>
+                  <b>Province</b> : Bangkok
+                  <b className='space'>Zipcode</b> : 10900
+                </p>
+                <p>
+                  <b>Mobile</b> : 080-970-6872
+                  <b className='space'>Email</b> : wi.peerawit_st@tni.ac.th
+                </p>
+              </div>
+            </fieldset>
+          </AboutStyled>
         </InnerLayout>
       </MainLayout>
     </>
   )
 }
+/* <video withd="320" height="240" controls>
+              <source src={test} type=''/>
+            </video> */
+const AboutStyled = styled.div`
+  margin-top: 3rem;
+  
+  h2{
+    font-size: 2rem;
+  }
+  
+  b{
+    text-decoration-line: underline;
+    font-size: 1.5rem;
+  }
+
+  p{
+    font-size: 1.5rem;
+    line-height: 4rem;
+    overflow: auto;
+  }
+
+  fieldset{
+    border: 8px double var(--border-color); 
+    padding: 20px; 
+    width: 80%;
+    border-radius: 10px;
+  }
+
+  .space{
+    margin-left: 2rem;
+  }
+  
+  .borderP{
+    border-top: 3px dashed var(--border-color)
+    
+  }
+
+
+
+
+`
 
 export default AboutPage

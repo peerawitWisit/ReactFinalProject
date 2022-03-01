@@ -1,17 +1,20 @@
 import React from 'react'
-import Title from '../Components/Title'
+import Skills from '../Components/Skills'
 import { InnerLayout, MainLayout } from '../styles/Layout'
+import Resume from '../Components/Resume'
 
 const ResumePage = () => {
   return (
-    <>
     <MainLayout>
         <InnerLayout>
-          <Title title={'Resume'} span={'Resume'}/>
+          <Skills/>
+          <Resume/>
         </InnerLayout>
     </MainLayout>
-    </>
+    
   )
 }
+
+
 
 export default ResumePage
