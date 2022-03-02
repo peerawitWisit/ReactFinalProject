@@ -2,24 +2,35 @@ import React from 'react'
 import styled from 'styled-components'
 import FacebookIcon from '@material-ui/icons/Facebook'
 import GithubIcon from '@material-ui/icons/GitHub'
-import YouTubeIcon from '@material-ui/icons/YouTube'
 import { Button } from '@material-ui/core'
+import { motion } from 'framer-motion'
+
 
 const HomePage = () => {
   return (
-    <HomePageStyled>
+    <motion.div initial={{opacity: 0}}
+                animate={{opacity:1}}
+                exit={{opacity:0}}  >
+        <HomePageStyled>
         <div className='typography'>
             <h1>Hi, I'm <span>Peerawit Wisitsurawong</span></h1>
             <p>Good at coding skill and Love to playing games</p>
             <div className='icons'>
-                <a href='https://www.facebook.com/peerawit.w'><div className='icon i-facebook'><FacebookIcon/></div></a>
-                <a href='https://github.com/peerawitWisit'><div className='icon i-github'><GithubIcon/></div></a>
-                <a href='https://www.youtube.com/channel/UCNNJu9ZdE8BujR7l9-eG7zg'><div className='icon i-youtube'><YouTubeIcon/></div></a>
+                <motion.div whileHover={{scale:1.1}} whileTap={{scale:0.9}} className='tran'>
+                    <a href='https://www.facebook.com/peerawit.w'><div className='icon i-facebook'><FacebookIcon/></div></a>
+                </motion.div>
+                <motion.div whileHover={{scale:1.1}} whileTap={{scale:0.9}} className='tran'>
+                    <a href='https://github.com/peerawitWisit'><div className='icon i-github'><GithubIcon/></div></a>
+                </motion.div>
             </div>
         </div>
-    </HomePageStyled>
+        </HomePageStyled>
+    </motion.div>
+    
   )
 }
+
+
 
 const HomePageStyled = styled.header`
     width: 100%;
@@ -30,6 +41,11 @@ const HomePageStyled = styled.header`
         padding: 0.5rem;
     }
    
+    .tran{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
     .typography{
         position: absolute;
         top: 50%;

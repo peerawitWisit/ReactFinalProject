@@ -12,6 +12,8 @@ import ContactPage from "./Pages/ContactPage";
 import Portfolio from "./Pages/Portfolio";
 import ProductPage from "./Pages/ProductPage";
 import CartPage from "./Pages/CartPage";
+import {AnimatePresence} from "framer-motion";
+
 
 function App() {
 
@@ -51,15 +53,18 @@ function App() {
             />
           </div>
         </div>
-        <Switching>
-          <Route path='/' exact><HomePage/></Route>
-          <Route path='/about'><AboutPage/></Route>
-          <Route path='/resume'><ResumePage/></Route>
-          <Route path='/portfolio'><Portfolio/></Route>
-          <Route path='/contact'><ContactPage/></Route>
-          <Route path='/product'><ProductPage /></Route>
-          <Route path='/cart'><CartPage/></Route>
-        </Switching>
+        <AnimatePresence>
+          <Switching>
+            <Route path='/' exact><HomePage/></Route>
+            <Route path='/about'><AboutPage/></Route>
+            <Route path='/resume'><ResumePage/></Route>
+            <Route path='/portfolio'><Portfolio/></Route>
+            <Route path='/contact'><ContactPage/></Route>
+            <Route path='/product'><ProductPage /></Route>
+            <Route path='/cart'><CartPage/></Route>
+          </Switching>
+        </AnimatePresence>
+        
       </MainContentStyled>
     </div>
   );

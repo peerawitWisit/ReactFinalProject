@@ -4,6 +4,7 @@ import avatar from '../img/profile2.jpg'
 import { NavLink} from 'react-router-dom' 
 
 const Navigation = () => {
+
   return (
     <NavigationStyled>
         <div className='avatar'>
@@ -38,6 +39,7 @@ const Navigation = () => {
     </NavigationStyled>
   )
 }
+
 
 const NavigationStyled = styled.nav`
     display: flex;
@@ -109,7 +111,8 @@ const NavigationStyled = styled.nav`
             display: block;
             text-align: center;
         }
-    }
+
+};
 
     
 `

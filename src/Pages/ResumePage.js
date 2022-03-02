@@ -2,15 +2,20 @@ import React from 'react'
 import Skills from '../Components/Skills'
 import { InnerLayout, MainLayout } from '../styles/Layout'
 import Resume from '../Components/Resume'
+import { motion } from 'framer-motion'
 
 const ResumePage = () => {
   return (
-    <MainLayout>
+    <motion.div initial={{opacity: 0}}
+    animate={{opacity:1}}
+    exit={{opacity:0}}  >
+      <MainLayout>
         <InnerLayout>
           <Skills/>
           <Resume/>
         </InnerLayout>
-    </MainLayout>
+      </MainLayout>
+    </motion.div>
     
   )
 }

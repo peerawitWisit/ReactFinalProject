@@ -1,3 +1,4 @@
+import { motion} from 'framer-motion'
 import React from 'react'
 import styled from 'styled-components'
 import Title from '../Components/Title'
@@ -5,8 +6,11 @@ import { InnerLayout, MainLayout } from '../styles/Layout'
 //import test from '../Video/test.mp4'
 
 const AboutPage = () => {
+
   return (
-    <>
+    <motion.div initial={{opacity: 0}}
+    animate={{opacity:1}}
+    exit={{opacity:0}}  >
       <MainLayout>
         <InnerLayout>
           <Title title={'About Me'} span={'About Me'}/>
@@ -60,7 +64,7 @@ const AboutPage = () => {
           </AboutStyled>
         </InnerLayout>
       </MainLayout>
-    </>
+    </motion.div>
   )
 }
 /* <video withd="320" height="240" controls>
