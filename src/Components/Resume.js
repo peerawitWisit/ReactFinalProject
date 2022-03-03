@@ -77,5 +77,6 @@ const ResumeStyled = styled.section`
     .resume-content{
         border-left: 3px solid var(--border-colorR);
     }
+
 `;
 export default Resume

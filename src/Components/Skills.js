@@ -18,8 +18,13 @@ function Skills() {
                     <div className="skills">
                         <ProgressBar 
                             title={'C#'}
-                            width={'75%'}
-                            text={'75%'}
+                            width={'70%'}
+                            text={'70%'}
+                        />
+                        <ProgressBar 
+                            title={'CSS3'}
+                            width={'70%'}
+                            text={'70%'}
                         />
                         <ProgressBar 
                             title={'HTML5'}
@@ -27,14 +32,9 @@ function Skills() {
                             text={'60%'}
                         />
                         <ProgressBar 
-                            title={'CSS3'}
-                            width={'72%'}
-                            text={'72%'}
-                        />
-                        <ProgressBar 
                             title={'SQL'}
-                            width={'70%'}
-                            text={'70%'}
+                            width={'60%'}
+                            text={'60%'}
                         />
                         <ProgressBar 
                             title={'JAVASCRIPT'}
@@ -43,18 +43,18 @@ function Skills() {
                         />
                         <ProgressBar 
                             title={'PYTHON'}
-                            width={'85%'}
-                            text={'85%'}
+                            width={'75%'}
+                            text={'75%'}
                         />
                         <ProgressBar 
                             title={'React JS'}
-                            width={'70%'}
-                            text={'70%'}
+                            width={'65%'}
+                            text={'65%'}
                         />
                         <ProgressBar 
                             title={'UNITY'}
-                            width={'80%'}
-                            text={'80%'}
+                            width={'75%'}
+                            text={'75%'}
                         />
                     </div>
                 </InnerLayout>

@@ -37,7 +37,19 @@ const TitleStyled = styled.div`
             background-color: var(--primary-color);
             border-radius: 15px;
             left: 0;
+            animation: animationRight 2s;
         }
+
+        @keyframes animationRight{
+            from{
+                width: 0;
+            }
+            to{
+                width: 6.22%;
+            }
+    
+        }
+
         span{
             font-weight: 900;
             color: var(--Shadow-color);

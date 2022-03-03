@@ -57,33 +57,26 @@ const DetailPage = () => {
         exit={{opacity:0}}>
         <MainLayout>
             <InnerLayout>
-            <Title title={"Detail"} span={"Detail"}/></InnerLayout>
+            <Title title={"Detail"} span={"Detail"}/>
             
             <div className="row">
                 <div className="col-md-12 mt-2">
                     
-                    <p>{title} ({id})</p>
+                    <h2>{title} ({id})</h2>
                     <Button variant="secondary" onClick={() => {
                         history.goBack()
                     }}>Back</Button>{' '}
                     <div className='row mt-4'>
-                        <CardDeck>
                             {
                                 detail.length > 0 ? (
                                     detail.map((d, index) => {
                                         return (
                                             <div className='col-md-4' key={d.ch_id}>
-                                                <Card className='mb-4 shadow-sm'>
-                                                    <Card.Body>
-                                                        <Card.Title>{d.ch_title}</Card.Title>
-                                                        <Card.Text>
-                                                            
-                                                        </Card.Text>
-                                                    </Card.Body>
-                                                    <Card.Footer>
+                                                <div className='mb-4 shadow-sm'>
+                                                        {d.ch_title}
+                                                       
                                                         <small className="text-muted">{d.ch_dateadd}</small>
-                                                    </Card.Footer>
-                                                </Card>
+                                                </div>
                                             </div>
                                         )
                                     })
@@ -91,12 +84,10 @@ const DetailPage = () => {
                                     <h1>No Data</h1>
                                 )
                             }
-                        </CardDeck>
-
                     </div>
                 </div>
             </div>
-            
+            </InnerLayout>
         </MainLayout>
         </motion.div>
     )

@@ -7,9 +7,9 @@ import styled from 'styled-components'
 
 const ResumePage = () => {
   return (
-    <motion.div initial={{opacity: 0}}
+    <motion.div  initial={{opacity: 0}}
     animate={{opacity:1}}
-    exit={{opacity:0}}  >
+    exit={{opacity:0}} >
       <MainLayout>
         <InnerLayout>
           <Skills/>
