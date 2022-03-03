@@ -26,6 +26,7 @@ const GlobalStyle = createGlobalStyle`
     --background-dark-color: #F1F1F1;
     --background-dark-grey: #e4e4e4;
     --border-color: #cbced8;
+    --border-colorR: #8c8d91;
     --background-light-color: #F1F1F1;
     --background-light-color-2: rgba(3,127,255,.3);
     --white-color: #151515;
@@ -45,6 +46,7 @@ const GlobalStyle = createGlobalStyle`
     --background-dark-color: #10121A;
     --background-dark-grey: #191D2B;
     --border-color: #2e344e;
+    --border-colorR: #626c99;
     --background-light-color: #F1F1F1;
     --background-light-color-2: rgba(3,127,255,.3);
     --white-color: #FFF;
@@ -91,6 +93,25 @@ const GlobalStyle = createGlobalStyle`
     span{
         color: var(--primary-color);
     }
+
+    Table{
+        width:95%
+        
+    } 
+
+    th{
+        border: 1px solid var(--border-color);
+        padding: 0.25rem;
+    }
+
+    td{
+        border: 1px solid var(--border-color);
+        padding: 0.4rem;
+    }
+
+    h2{
+        font-size: 2rem;
+      }
 
     .light-dark-mode{
         position: fixed;

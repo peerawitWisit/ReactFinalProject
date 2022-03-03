@@ -23,6 +23,8 @@ const ResumeItemStyled = styled.div`
             font-size: 80%;
         }
     }
+
+
     &:not(:last-child){
         padding-bottom: 3rem;
     }
@@ -33,16 +35,18 @@ const ResumeItemStyled = styled.div`
         &::before{
             content: "";
             position: absolute;
-            left: -10px;
-            top: 5px;
+            left: -11px;
+            top: 0px;
             height: 15px;
             width: 15px;
             border-radius: 50%;
-            border: 2px solid var(--border-color);
+            border: 2px solid var(--border-colorR);
             background-color: var(--background-dark-color);
         }
         p{
             display: inline-block;
+            font-size: 1.5rem;
+            font-weight: bold;
         }
     }
     .right-content{
@@ -55,7 +59,7 @@ const ResumeItemStyled = styled.div`
             top: 15px;
             height: 2px;
             width: 3rem;
-            background-color: var(--border-color);
+            background-color: var(--border-colorR);
         }
         h5{
             color: var(--primary-color);

@@ -3,15 +3,24 @@ import styled from 'styled-components';
 import ProgressBar from './ProgressBar';
 import { InnerLayout, MainLayout } from '../styles/Layout'
 import Title from '../Components/Title'
-
+import ComputerIcon from '@material-ui/icons/Computer';
+import SmallTitle from './SmallTitle';
 
 function Skills() {
+    
+    const computer = <ComputerIcon/>
+    
     return (
         <SkillsStyled>
-            
                 <Title title={'My Skills'} span={'my skills'} />
                 <InnerLayout>
+                    <SmallTitle icon={computer} title={"Computer Skills"} />
                     <div className="skills">
+                        <ProgressBar 
+                            title={'C#'}
+                            width={'75%'}
+                            text={'75%'}
+                        />
                         <ProgressBar 
                             title={'HTML5'}
                             width={'60%'}
@@ -19,13 +28,18 @@ function Skills() {
                         />
                         <ProgressBar 
                             title={'CSS3'}
-                            width={'75%'}
-                            text={'75%'}
+                            width={'72%'}
+                            text={'72%'}
+                        />
+                        <ProgressBar 
+                            title={'SQL'}
+                            width={'70%'}
+                            text={'70%'}
                         />
                         <ProgressBar 
                             title={'JAVASCRIPT'}
-                            width={'65%'}
-                            text={'65%'}
+                            width={'70%'}
+                            text={'70%'}
                         />
                         <ProgressBar 
                             title={'PYTHON'}
@@ -34,8 +48,8 @@ function Skills() {
                         />
                         <ProgressBar 
                             title={'React JS'}
-                            width={'65%'}
-                            text={'65%'}
+                            width={'70%'}
+                            text={'70%'}
                         />
                         <ProgressBar 
                             title={'UNITY'}
@@ -50,6 +64,7 @@ function Skills() {
 
 const SkillsStyled = styled.section`
     .skills{
+        margin-top: 2rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 2rem;

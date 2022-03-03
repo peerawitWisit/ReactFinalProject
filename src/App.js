@@ -14,6 +14,13 @@ import ProductPage from "./Pages/ProductPage";
 import CartPage from "./Pages/CartPage";
 import {AnimatePresence} from "framer-motion";
 
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import rootReducer from "./redux/reducers/index";
+import UserStoreProvider from "./context/UserContext"
+import DetailPage from "./Pages/DetailPage";
+
+const store = createStore(rootReducer)
 
 function App() {
 
@@ -53,7 +60,9 @@ function App() {
             />
           </div>
         </div>
-        <AnimatePresence>
+        <Provider store={store}>
+          <UserStoreProvider>
+          <AnimatePresence>
           <Switching>
             <Route path='/' exact><HomePage/></Route>
             <Route path='/about'><AboutPage/></Route>
@@ -62,8 +71,12 @@ function App() {
             <Route path='/contact'><ContactPage/></Route>
             <Route path='/product'><ProductPage /></Route>
             <Route path='/cart'><CartPage/></Route>
+            <Route path='/detail/:id/title/:title'><DetailPage/></Route>
           </Switching>
         </AnimatePresence>
+          </UserStoreProvider>
+        </Provider>
+        
         
       </MainContentStyled>
     </div>

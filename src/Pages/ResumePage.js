@@ -3,6 +3,7 @@ import Skills from '../Components/Skills'
 import { InnerLayout, MainLayout } from '../styles/Layout'
 import Resume from '../Components/Resume'
 import { motion } from 'framer-motion'
+import styled from 'styled-components'
 
 const ResumePage = () => {
   return (
@@ -12,7 +13,7 @@ const ResumePage = () => {
       <MainLayout>
         <InnerLayout>
           <Skills/>
-          <Resume/>
+          <Resume />
         </InnerLayout>
       </MainLayout>
     </motion.div>

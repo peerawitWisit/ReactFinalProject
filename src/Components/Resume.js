@@ -12,20 +12,26 @@ function Resume() {
     const school = <SchoolIcon />
     return (
         <ResumeStyled>
-            <Title title={"p"} span={"o"} />
+            <Title title={"Personal History"} span={"Personal History"} />
             <InnerLayout>
                 <div className="small-title">
                     <SmallTitle icon={school} title={"Education"} />
                 </div>
                 <div className="resume-content">
                     <ResumeItem
-                        year={school}
+                        year={"2013"}
+                        title={"Horwang School"}
+                        subTitle={"Middle school"}
+                        text={""} 
+                    />
+                    <ResumeItem
+                        year={"2016"}
                         title={"Horwang School"}
                         subTitle={"High School"}
                         text={"Mathematics-Science"} 
                     />
                     <ResumeItem 
-                        year={"2019"} 
+                        year={"2019 - Present"} 
                         title={"Thai-Nichi Institute of Technology"}
                         subTitle={"Information Tecnology"}
                         text={"Mutimedia Tecnology"} 
@@ -38,20 +44,14 @@ function Resume() {
                     /> */}
                 </div>
                 <div className="small-title u-small-title-margin">
-                    <SmallTitle icon={"3"} title={"3"} />
+                    <SmallTitle icon={briefcase} title={"Working"} />
                 </div>
                 <div className="resume-content ">
                     <ResumeItem 
-                        year={"3"} 
-                        title={"3"}
-                        subTitle={"3"}
-                        text={"3"} 
-                    />
-                    <ResumeItem 
-                        year={"3"} 
-                        title={"3"}
-                        subTitle={"3"}
-                        text={"3"} 
+                        year={"None"} 
+                        title={""}
+                        subTitle={""}
+                        text={""} 
                     />
                     {/* <ResumeItem 
                         year={'2015 - 2017'} 
@@ -66,15 +66,16 @@ function Resume() {
 }
 
 const ResumeStyled = styled.section`
+
     .small-title{
-        padding-bottom: 3rem;
+        padding-bottom: 2rem;
     }
     .u-small-title-margin{
         margin-top: 4rem;
     }
 
     .resume-content{
-        border-left: 2px solid var(--border-color);
+        border-left: 3px solid var(--border-colorR);
     }
 `;
 export default Resume

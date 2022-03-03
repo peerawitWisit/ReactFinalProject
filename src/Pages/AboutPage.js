@@ -73,9 +73,7 @@ const AboutPage = () => {
 const AboutStyled = styled.div`
   margin-top: 3rem;
   
-  h2{
-    font-size: 2rem;
-  }
+  
   
   b{
     text-decoration-line: underline;

@@ -2,8 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import avatar from '../img/profile2.jpg'
 import { NavLink} from 'react-router-dom' 
+import { useSelector, useDispatch } from 'react-redux'
+
 
 const Navigation = () => {
+
 
   return (
     <NavigationStyled>
