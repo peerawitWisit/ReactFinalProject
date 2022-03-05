@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import React from 'react'
+import { ContactUs } from '../Components/ContactUs'
 import Title from '../Components/Title'
 import { InnerLayout, MainLayout } from '../styles/Layout'
 
@@ -11,6 +12,7 @@ const ContactPage = () => {
       <MainLayout>
         <InnerLayout>
           <Title title={'Contact'} span={'Contact'}/>
+          <ContactUs/>
         </InnerLayout>
       </MainLayout>
     </motion.div>

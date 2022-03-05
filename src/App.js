@@ -20,6 +20,8 @@ import rootReducer from "./redux/reducers/index";
 import UserStoreProvider from "./context/UserContext"
 import DetailPage from "./Pages/DetailPage";
 
+import { ToastProvider } from 'react-toast-notifications'
+
 const store = createStore(rootReducer)
 
 function App() {
@@ -63,6 +65,7 @@ function App() {
         <Provider store={store}>
           <UserStoreProvider>
           <AnimatePresence>
+            <ToastProvider placement="top-right">
           <Switching>
             <Route path='/' exact><HomePage/></Route>
             <Route path='/about'><AboutPage/></Route>
@@ -73,6 +76,7 @@ function App() {
             <Route path='/cart'><CartPage/></Route>
             <Route path='/detail/:id/title/:title'><DetailPage/></Route>
           </Switching>
+          </ToastProvider>
         </AnimatePresence>
           </UserStoreProvider>
         </Provider>

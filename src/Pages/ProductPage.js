@@ -8,6 +8,7 @@ import { useSelector, useDispatch} from 'react-redux'
 import { InnerLayout, MainLayout } from '../styles/Layout';
 import Title from '../Components/Title';
 import { motion } from 'framer-motion';
+import styled from 'styled-components';
 
 const ProductPage = () => {
 
@@ -78,7 +79,7 @@ const ProductPage = () => {
         <MainLayout>
           <InnerLayout>
             <Title title={"Product"} span={"Product"}/></InnerLayout>
-            <div className="row">
+            <ProductStyled className="row">
                 <div className="col-md-12 mt-2">
                     
                     <Table striped bordered hover>
@@ -108,12 +109,12 @@ const ProductPage = () => {
                                             <td><Image src={p.picture} rounded width = {60} /></td>
                                             <td className="text-center">
                                                 < Link to={`/detail/${p.id}/title/${p.title}`}>
-                                                    <Button variant="outline-info">
+                                                    <Button className='click'>
                                                         Click<BiCommentDetail/>
                                                     </Button>
                                                 </Link>
 
-                                                <Button variant='outline-success' className='ml-2' onClick={() => addCart(p)}>Buy</Button>
+                                                <Button className='ml-2 buy' onClick={() => addCart(p)}>Buy</Button>
                                             </td>
                                         </tr>
                                     )
@@ -122,12 +123,28 @@ const ProductPage = () => {
                         </tbody>
                     </Table>
                 </div>
-            </div>
+            </ProductStyled>
         </MainLayout>
         </motion.div>
     );
 }
 
+const ProductStyled = styled.div`
+    .buy{
+        border: 2px solid #52cc00;
+        background-color: rgba(0,0,0,0);
+        color: #52cc00;
+        border-radius: 5px;
+        margin: 2px;
+    }
 
+    .click{
+        border: 2px solid #fadb14;
+        background-color: rgba(0,0,0,0);
+        color: #fadb14;
+        border-radius: 5px;
+        margin: 2px;
+    }
+`
 
 export default ProductPage

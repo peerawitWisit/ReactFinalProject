@@ -5,6 +5,7 @@ import { Spinner, Card, CardDeck, Button } from "react-bootstrap"
 import { InnerLayout, MainLayout } from '../styles/Layout'
 import Title from '../Components/Title'
 import { motion } from 'framer-motion'
+import styled from 'styled-components'
 
 const DetailPage = () => {
 
@@ -59,11 +60,11 @@ const DetailPage = () => {
             <InnerLayout>
             <Title title={"Detail"} span={"Detail"}/>
             
-            <div className="row">
+            <DetailStyled className="row">
                 <div className="col-md-12 mt-2">
                     
                     <h2>{title} ({id})</h2>
-                    <Button variant="secondary" onClick={() => {
+                    <Button className='back' onClick={() => {
                         history.goBack()
                     }}>Back</Button>{' '}
                     <div className='row mt-4'>
@@ -86,11 +87,29 @@ const DetailPage = () => {
                             }
                     </div>
                 </div>
-            </div>
+            </DetailStyled>
             </InnerLayout>
         </MainLayout>
         </motion.div>
     )
 }
+
+const DetailStyled = styled.div`
+    .back{
+        border: 2px solid #c2c2c2;
+        background-color: rgba(0,0,0,0);
+        color: #c2c2c2;
+        border-radius: 5px;
+        margin: 2px;
+    }
+
+    .col-md-4{
+        margin: 1rem 0;
+    }
+
+    h2{
+        margin-top: 2rem;
+    }
+`
 
 export default DetailPage
