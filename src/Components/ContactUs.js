@@ -9,7 +9,7 @@ import { useForm } from 'react-hook-form';
 
 const schema = yup.object({
   name: yup.string().required('*Input Name,Please'),
-  email: yup.string().required('*Input Email,Please'),
+  email: yup.string().required('*Input Email,Please').email('Format is invalid'),
 }).required();
 
 export const ContactUs = () => {

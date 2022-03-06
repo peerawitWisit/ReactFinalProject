@@ -20,6 +20,7 @@ const GlobalStyle = createGlobalStyle`
 //     --scrollbar-track-color: #383838;
     
 .light-theme{
+    --topic-color: black;
     --primary-color: #007bff;
     --primary-color-light: #057FFF;
     --secondary-color: #ff7675;
@@ -40,6 +41,7 @@ const GlobalStyle = createGlobalStyle`
     --Shadow-color: rgba(25,29,43,.05);
 }
 .dark-theme{
+    --topic-color: white;
     --primary-color: #007bff;
     --primary-color-light: #057FFF;
     --secondary-color: #6c757d;

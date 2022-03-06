@@ -80,13 +80,6 @@ const HomePageStyled = styled.header`
 
             }
 
-            .i-youtube{
-                &:hover{
-                    border: 2px solid red;
-                    color: red;
-                    
-                }
-            }
             .i-github{
                 &:hover{
                     border: 2px solid #5F4687;

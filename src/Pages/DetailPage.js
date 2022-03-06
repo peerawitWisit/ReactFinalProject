@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams, useHistory } from "react-router-dom"
 import axios from 'axios'
-import { Spinner, Card, CardDeck, Button } from "react-bootstrap"
+import { Spinner, Button } from "react-bootstrap"
 import { InnerLayout, MainLayout } from '../styles/Layout'
 import Title from '../Components/Title'
 import { motion } from 'framer-motion'

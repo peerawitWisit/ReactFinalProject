@@ -52,6 +52,8 @@ const ResumeItemStyled = styled.div`
     .right-content{
         padding-left: 5rem;
         position: relative;
+        width: 80%;
+        
         &::before{
             content: "";
             position: absolute;
@@ -65,6 +67,7 @@ const ResumeItemStyled = styled.div`
             color: var(--primary-color);
             font-size: 2rem;
             padding-bottom: .4rem;
+            word-break: normal;
         }
         h6{
             padding-bottom: .6rem;

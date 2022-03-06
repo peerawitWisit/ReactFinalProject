@@ -3,7 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Title from '../Components/Title'
 import { InnerLayout, MainLayout } from '../styles/Layout'
-//import test from '../Video/test.mp4'
+import aboutPic from '../img/about3.jpg'
 
 const AboutPage = () => {
 
@@ -15,6 +15,9 @@ const AboutPage = () => {
         <InnerLayout>
           <Title title={'About Me'} span={'About Me'}/>
           <AboutStyled>
+          <div className='image'>
+            <img src={aboutPic} alt=''/>
+          </div>
           <fieldset className='info'>
               <legend><h2>Personal Infomation</h2></legend>
               <div>
@@ -54,6 +57,7 @@ const AboutPage = () => {
                 <p>
                   <b>Province</b> : Bangkok
                   <b className='space'>Zipcode</b> : 10900
+                  <b className='space'>Country</b> : Thailand
                 </p>
                 <p>
                   <b>Mobile</b> : 080-970-6872
@@ -67,12 +71,16 @@ const AboutPage = () => {
     </motion.div>
   )
 }
-/* <video withd="320" height="240" controls>
-              <source src={test} type=''/>
-            </video> */
 const AboutStyled = styled.div`
   margin-top: 3rem;
   
+  .image{
+    padding-bottom: 2rem;
+    img{
+      border-radius: 10px;
+      width: 80%
+    }
+  }
   
   
   b{
@@ -91,6 +99,9 @@ const AboutStyled = styled.div`
     padding: 20px; 
     width: 80%;
     border-radius: 10px;
+    legend{
+      color: var(--topic-color);
+    }
   }
 
   .space{

@@ -33,8 +33,8 @@ function Resume() {
                     <ResumeItem 
                         year={"2019 - Present"} 
                         title={"Thai-Nichi Institute of Technology"}
-                        subTitle={"Information Tecnology"}
-                        text={"Mutimedia Tecnology"} 
+                        subTitle={"bachelor's degree"}
+                        text={"Information Tecnology(IT)"} 
                     />
                     {/* <ResumeItem 
                         year={} 
@@ -44,7 +44,7 @@ function Resume() {
                     /> */}
                 </div>
                 <div className="small-title u-small-title-margin">
-                    <SmallTitle icon={briefcase} title={"Working"} />
+                    <SmallTitle icon={briefcase} title={"Experience"} />
                 </div>
                 <div className="resume-content ">
                     <ResumeItem 
