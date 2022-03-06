@@ -6,6 +6,8 @@ import f1 from '../img/FOutbreaking/F1.png'
 import f2 from '../img/FOutbreaking/F2.png'
 import f3 from '../img/FOutbreaking/F3.png'
 import f4 from '../img/FOutbreaking/F4.png'
+import f5 from '../img/FOutbreaking/F5.png'
+import f6 from '../img/FOutbreaking/F6.png'
 
 import cat1 from '../img/CatJump/CatJump1.png'
 import cat2 from '../img/CatJump/CatJump2.png'
@@ -15,6 +17,8 @@ import d1 from '../img/3Dshooting/3D1.png'
 import d2 from '../img/3Dshooting/3D2.png'
 import d3 from '../img/3Dshooting/3D3.png'
 import d4 from '../img/3Dshooting/3D4.png'
+import d5 from '../img/3Dshooting/3D5.png'
+import d6 from '../img/3Dshooting/3D6.png'
 
 import t1 from '../img/ToiletAdventure/Toilet1.png'
 import t2 from '../img/ToiletAdventure/Toilet2.png'
@@ -22,6 +26,8 @@ import t3 from '../img/ToiletAdventure/Toilet3.png'
 import t4 from '../img/ToiletAdventure/Toilet4.png'
 import t5 from '../img/ToiletAdventure/Toilet5.png'
 import t6 from '../img/ToiletAdventure/Toilet6.png'
+import Member from './Member';
+import MemberCon from './MemberCon';
 
 const Port = () => {
   return (
@@ -37,7 +43,10 @@ const Port = () => {
                 <img src={f2} alt='' />
                 <img src={f3} alt='' />
                 <img src={f4} alt='' />
+                <img src={f5} alt='' />
+                <img src={f6} alt='' />
             </div>
+            <MemberCon/>
             <h5>Download: <a href='https://drive.google.com/file/d/1YnVxS4ECF8Kj-2N4VJ2SXTr9wuOZ0RcX/view?usp=sharing'>here</a></h5>
         </div>
 
@@ -60,6 +69,7 @@ const Port = () => {
                 <img src={cat2} alt='' />
                 <img src={cat3} alt='' />
             </div>
+            <Member/>
         </div>
 
         <div className='other'>
@@ -73,6 +83,8 @@ const Port = () => {
                 <img src={d2} alt='' />
                 <img src={d3} alt='' />
                 <img src={d4} alt='' />
+                <img src={d5} alt='' />
+                <img src={d6} alt='' />
             </div>
         </div>
 
@@ -90,6 +102,7 @@ const Port = () => {
                 <img src={t5} alt='' />
                 <img src={t6} alt='' />
             </div>
+            <Member/>
             <h5>Download: <a href='https://drive.google.com/drive/folders/19fc2A1eCbQPfIku-KQde4eOi2emfh4GT?usp=sharing'>here</a></h5>
         </div>
 

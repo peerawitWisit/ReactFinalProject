@@ -37,7 +37,7 @@ const Navigation = () => {
             </li>
         </ul>
         <footer className='footer'>
-            <p>@2022 Peerawit Wisitsurawong</p>
+            <p>@{new Date().getFullYear()} Peerawit Wisitsurawong</p>
         </footer>
     </NavigationStyled>
   )
