@@ -29,12 +29,6 @@ const Navigation = () => {
             <li className='nav-item'>
                 <NavLink to='/contact' activeClassName='active'>Contact</NavLink>
             </li>
-            <li className='nav-item'>
-                <NavLink to='/product' activeClassName='active'>Product</NavLink>
-            </li>
-            <li className='nav-item'>
-                <NavLink to='/cart' activeClassName='active'>Cart</NavLink>
-            </li>
         </ul>
         <footer className='footer'>
             <p>@{new Date().getFullYear()} Peerawit Wisitsurawong</p>

@@ -32,16 +32,6 @@ const AboutPage = () => {
                 <p>
                   <b>Date of Birth</b> : 29 March 2001
                 </p>
-                <p>
-                  <b>Weight</b> : 81 kg.
-                  <b className='space'>Height</b> : 173 cm.
-                  <b className='space'>Marital Status</b> : Single
-                </p>
-                <p>
-                  <b>Nationality</b> : Thai
-                  <b className='space'>Race</b> : Thai
-                  <b className='space'>Religion</b> : Buddhism
-                </p>
                 <p className='borderP'>
                   <h2>Address</h2>
                 </p>

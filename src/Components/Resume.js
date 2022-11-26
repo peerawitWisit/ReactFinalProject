@@ -19,13 +19,13 @@ function Resume() {
                 </div>
                 <div className="resume-content">
                     <ResumeItem
-                        year={"2013"}
+                        year={"2013 - 2015"}
                         title={"Horwang School"}
                         subTitle={"Middle school"}
                         text={""} 
                     />
                     <ResumeItem
-                        year={"2016"}
+                        year={"2016 - 2018"}
                         title={"Horwang School"}
                         subTitle={"High School"}
                         text={"Mathematics-Science"} 
@@ -48,9 +48,9 @@ function Resume() {
                 </div>
                 <div className="resume-content ">
                     <ResumeItem 
-                        year={"None"} 
-                        title={""}
-                        subTitle={""}
+                        year={"1 JUN 2022 - 30 SEP 2022"} 
+                        title={"Innova Interactive Studio"}
+                        subTitle={"Internship Unity Programer"}
                         text={""} 
                     />
                     {/* <ResumeItem 
