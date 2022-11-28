@@ -11,14 +11,14 @@ import ResumePage from "./Pages/ResumePage";
 import ContactPage from "./Pages/ContactPage";
 import Portfolio from "./Pages/Portfolio";
 import ProductPage from "./Pages/ProductPage";
-import CartPage from "./Pages/CartPage";
+//import CartPage from "./Pages/CartPage";
 import {AnimatePresence} from "framer-motion";
 
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import rootReducer from "./redux/reducers/index";
 import UserStoreProvider from "./context/UserContext"
-import DetailPage from "./Pages/DetailPage";
+//simport DetailPage from "./Pages/DetailPage";
 
 import { ToastProvider } from 'react-toast-notifications'
 
@@ -73,8 +73,6 @@ function App() {
             <Route path='/portfolio'><Portfolio/></Route>
             <Route path='/contact'><ContactPage/></Route>
             <Route path='/product'><ProductPage /></Route>
-            <Route path='/cart'><CartPage/></Route>
-            <Route path='/detail/:id/title/:title'><DetailPage/></Route>
           </Switching>
           </ToastProvider>
         </AnimatePresence>

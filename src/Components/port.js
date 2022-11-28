@@ -37,6 +37,13 @@ import h6 from '../img/HERO/H6.png'
 import bomb1 from '../img/Bomberman/b1.png'
 import bomb2 from '../img/Bomberman/b2.png'
 import bomb3 from '../img/Bomberman/b3.png'
+
+import s1 from '../img/SantaKiller/S1.png'
+import s2 from '../img/SantaKiller/S2.png'
+import s3 from '../img/SantaKiller/S3.png'
+import s4 from '../img/SantaKiller/S4.png'
+import s5 from '../img/SantaKiller/S5.png'
+import s6 from '../img/SantaKiller/S6.png'
 import Member from './Member';
 import MemberCon from './MemberCon';
 
@@ -147,10 +154,28 @@ const Port = () => {
                 <img src={bomb3} alt='' />
             </div>
         </div>
+
+        <div className='other'>
+            <p><b>Santa Killer</b></p>
+            <h6>Internship Unity Programmer (2022)</h6>
+            <div className='video'>
+                <iframe width="640" height="480" src="https://www.youtube.com/embed/TvtI-rLTa9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div className='image'>
+                <img src={s1} alt='' />
+                <img src={s2} alt='' />
+                <img src={s3} alt='' />
+                <img src={s4} alt='' />
+                <img src={s5} alt='' />
+                <img src={s6} alt='' />
+            </div>
+            <h5>Download: <a href='https://drive.google.com/file/d/1wMKixGe4ojZt8fHVxz4FhV2MNwMYCVB3/view?usp=share_link'>here</a></h5>
+        </div>
         
     </PortStyled>
   )
 }
+
 
 const PortStyled = styled.div`
     margin-top: 3rem;
