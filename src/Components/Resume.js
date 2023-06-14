@@ -56,7 +56,7 @@ function Resume() {
                     { <ResumeItem 
                         year={'13 MAR 2023 - 12 MAY 2023'} 
                         title={'Higashikawa Arts Exchange center'}
-                        subTitle={'Higashigawa Short-Term Japanese Language Course'}
+                        subTitle={'Higashikawa Short-Term Japanese Language Course'}
                         text={'2 months'} 
                     /> }
                     {/* <ResumeItem 
