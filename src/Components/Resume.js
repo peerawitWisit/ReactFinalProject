@@ -31,7 +31,7 @@ function Resume() {
                         text={"Mathematics-Science"} 
                     />
                     <ResumeItem 
-                        year={"2019 - Present"} 
+                        year={"2019 - 2022"} 
                         title={"Thai-Nichi Institute of Technology"}
                         subTitle={"bachelor's degree"}
                         text={"Information Tecnology(IT)"} 
