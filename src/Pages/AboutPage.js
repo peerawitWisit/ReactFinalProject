@@ -51,7 +51,7 @@ const AboutPage = () => {
                 </p>
                 <p>
                   <b>Mobile</b> : 080-970-6872
-                  <b className='space'>Email</b> : wi.peerawit_st@tni.ac.th
+                  <b className='space'>Email</b> : wi.peerawit@gmail.com
                 </p>
               </div>
             </fieldset>

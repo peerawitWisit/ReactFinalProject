@@ -44,6 +44,14 @@ import s3 from '../img/SantaKiller/S3.png'
 import s4 from '../img/SantaKiller/S4.png'
 import s5 from '../img/SantaKiller/S5.png'
 import s6 from '../img/SantaKiller/S6.png'
+
+import m1 from '../img/MonopolyGame/m1.png'
+import m2 from '../img/MonopolyGame/m2.png'
+import m3 from '../img/MonopolyGame/m3.png'
+import m4 from '../img/MonopolyGame/m4.png'
+import m5 from '../img/MonopolyGame/m5.png'
+import m6 from '../img/MonopolyGame/m6.png'
+import m7 from '../img/MonopolyGame/m7.png'
 import Member from './Member';
 import MemberCon from './MemberCon';
 
@@ -70,7 +78,7 @@ const Port = () => {
 
         <div className='other'>
             <p><b>Gstore</b></p>
-            <h6>Python Final-Project (2021)</h6>
+            <h6>Python / Final-Project (2021)</h6>
             <div className='video'>
                 <iframe width="640" height="480" src="https://www.youtube.com/embed/LA9BpjgVqF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
@@ -92,7 +100,7 @@ const Port = () => {
 
         <div className='other'>
             <p><b>3Dshooting</b></p>
-            <h6>Unity In-Class (no sound) (2021)<VolumeOffIcon/></h6>
+            <h6>Unity / In-Class (no sound) (2021)<VolumeOffIcon/></h6>
             <div className='video'>
                 <iframe width="640" height="480" src="https://www.youtube.com/embed/Ad7xOfi6ORM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
@@ -108,7 +116,7 @@ const Port = () => {
 
         <div className='other'>
             <p><b>ToiletAdventure</b></p>
-            <h6>Unity Project 2 (2021)</h6>
+            <h6>Unity / Project 2 (2021)</h6>
             <div className='video'>
                 <iframe width="640" height="480" src="https://www.youtube.com/embed/32jclWDxS64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
@@ -126,7 +134,7 @@ const Port = () => {
 
         <div className='other'>
             <p><b>HERO</b></p>
-            <h6>Unity Final-Project (2021)</h6>
+            <h6>Unity / Final-Project (2021)</h6>
             <div className='video'>
                 <iframe width="640" height="480" src="https://www.youtube.com/embed/llh9jFpktvM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
@@ -170,6 +178,22 @@ const Port = () => {
                 <img src={s6} alt='' />
             </div>
             <h5>Download: <a href='https://drive.google.com/file/d/1wMKixGe4ojZt8fHVxz4FhV2MNwMYCVB3/view?usp=share_link'>here</a></h5>
+        </div>
+
+        <div className='other'>
+            <p><b>Monopoly Game</b></p>
+            <h6>Unity / practice game (2023)</h6>
+            <div className='video'>
+                <img src={m3} alt='' />
+            </div>
+            <div className='image'>
+                <img src={m1} alt='' />
+                <img src={m2} alt='' />
+                <img src={m4} alt='' />
+                <img src={m5} alt='' />
+                <img src={m6} alt='' />
+                <img src={m7} alt='' />
+            </div>
         </div>
         
     </PortStyled>
